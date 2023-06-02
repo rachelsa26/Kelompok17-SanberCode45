@@ -12,23 +12,23 @@ Team Members:
 
 Task allocation for feature testing :
 1. Elsa
-Login & Logout
+(Login & Logout
 Menu Admin - User Management - Users
-Menu Admin - User Management - Users - Add User
+Menu Admin - User Management - Users - Add User)
 
 2. Irfan
-Menu Admin - User Management - Users - Edit User
+(Menu Admin - User Management - Users - Edit User
 Menu Admin - User Management - Users - Delete User
 Menu Admin - Organization
-Menu Admin - Organization - Add Locations
+Menu Admin - Organization - Add Locations)
 
 3. Danu
-Menu Admin - Organization - Edit Locations
+(Menu Admin - Organization - Edit Locations
 Menu Admin - Organization - Delete Locations
-Menu PIM - Employee List
+Menu PIM - Employee List)
 
 4. Reski
-Menu PIM - Add Employee
+(Menu PIM - Add Employee
 Menu PIM - Edit Employee
 Menu PIM - Delete Employee
-menuAdmin
+menuAdmin)
