@@ -12,41 +12,42 @@ Team Members:
 4. Reski Anjalina
 
 Task allocation for feature testing :
-1. Elsa
 
-Login & Logout
+Elsa
 
-Menu Admin - User Management - Users
+1. Login & Logout
 
-Menu Admin - User Management - Users - Add User
+2. Menu Admin - User Management - Users
 
-
-2. Irfan
-
-Menu Admin - User Management - Users - Edit User
-
-Menu Admin - User Management - Users - Delete User
-
-Menu Admin - Organization
-
-Menu Admin - Organization - Add Locations
+3. Menu Admin - User Management - Users - Add User
 
 
-3. Danu
+Irfan
 
-Menu Admin - Organization - Edit Locations
+1. Menu Admin - User Management - Users - Edit User
 
-Menu Admin - Organization - Delete Locations
+2. Menu Admin - User Management - Users - Delete User
 
-Menu PIM - Employee List
+3. Menu Admin - Organization
+
+4. Menu Admin - Organization - Add Locations
 
 
-4. Reski
+Danu
 
-Menu PIM - Add Employee
+1. Menu Admin - Organization - Edit Locations
 
-Menu PIM - Edit Employee
+2. Menu Admin - Organization - Delete Locations
 
-Menu PIM - Delete Employee
+3. Menu PIM - Employee List
 
-menuAdmin
+
+Reski
+
+1. Menu PIM - Add Employee
+
+2. Menu PIM - Edit Employee
+
+3. Menu PIM - Delete Employee
+
+4. menuAdmin
