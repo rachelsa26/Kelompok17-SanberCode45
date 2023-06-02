@@ -13,8 +13,11 @@ Team Members:
 
 Task allocation for feature testing :
 1. Elsa
+
 (Login & Logout;
+
 Menu Admin - User Management - Users;
+
 Menu Admin - User Management - Users - Add User)
 
 2. Irfan
