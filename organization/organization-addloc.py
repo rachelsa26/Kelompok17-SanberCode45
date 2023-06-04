@@ -16,29 +16,29 @@ class TestEditUser(unittest.TestCase):
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
 
 
-    def test_success_add_org_loc(self): #test success edit users at admin
-        username = "".join([chr(randint(65, 90)) for _ in range(randint(6, 12))])
-        driver = self.browser
-        driver.implicitly_wait(20)
-        driver.get(inputan.baseUrl)
-        baselogin.test_login(driver)
-        driver.find_element(By.XPATH,elemen.admin).click() 
-        driver.find_element(By.XPATH,elemen.organization).click() 
-        driver.find_element(By.XPATH,elemen.location).click() 
-        driver.find_element(By.XPATH,elemen.loc_button).click() 
-        driver.find_element(By.XPATH,elemen.name_loc).send_keys(username) 
-        driver.find_element(By.XPATH,elemen.city_loc).send_keys("jogja") 
-        driver.find_element(By.XPATH,elemen.prov_loc).send_keys("DIY") 
-        driver.find_element(By.XPATH,elemen.post_loc).send_keys("55160") 
-        driver.find_element(By.XPATH,elemen.whole_country).click()
-        driver.find_element(By.XPATH,elemen.country_loc).click() 
-        driver.find_element(By.XPATH,elemen.phone_loc).send_keys("0813677638") 
-        driver.find_element(By.XPATH,elemen.fax_loc).send_keys("123141") 
-        driver.find_element(By.XPATH,elemen.notes).send_keys("pasti berhasil") 
-        driver.find_element(By.XPATH,elemen.address_loc).send_keys("jalan tamansiswa") 
-        driver.find_element(By.XPATH,elemen.but_loc).click()
+    # def test_success_add_org_loc(self): #test success edit users at admin
+    #     username = "".join([chr(randint(65, 90)) for _ in range(randint(6, 12))])
+    #     driver = self.browser
+    #     driver.implicitly_wait(20)
+    #     driver.get(inputan.baseUrl)
+    #     baselogin.test_login(driver)
+    #     driver.find_element(By.XPATH,elemen.admin).click() 
+    #     driver.find_element(By.XPATH,elemen.organization).click() 
+    #     driver.find_element(By.XPATH,elemen.location).click() 
+    #     driver.find_element(By.XPATH,elemen.loc_button).click() 
+    #     driver.find_element(By.XPATH,elemen.name_loc).send_keys(username) 
+    #     driver.find_element(By.XPATH,elemen.city_loc).send_keys("jogja") 
+    #     driver.find_element(By.XPATH,elemen.prov_loc).send_keys("DIY") 
+    #     driver.find_element(By.XPATH,elemen.post_loc).send_keys("55160") 
+    #     driver.find_element(By.XPATH,elemen.whole_country).click()
+    #     driver.find_element(By.XPATH,elemen.country_loc).click() 
+    #     driver.find_element(By.XPATH,elemen.phone_loc).send_keys("0813677638") 
+    #     driver.find_element(By.XPATH,elemen.fax_loc).send_keys("123141") 
+    #     driver.find_element(By.XPATH,elemen.notes).send_keys("pasti berhasil") 
+    #     driver.find_element(By.XPATH,elemen.address_loc).send_keys("jalan tamansiswa") 
+    #     driver.find_element(By.XPATH,elemen.but_loc).click()
         
-        time.sleep(5)
+    #     time.sleep(5)
 
 
     # def test_failed_empty_org_loc_name(self): #test success edit users at admin

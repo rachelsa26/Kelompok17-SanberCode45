@@ -44,6 +44,7 @@ class TestEditUser(unittest.TestCase):
         
     def test_failed_edit_userrole(self): #test success edit users at admin
         driver = self.browser
+        username = "".join([chr(randint(65, 90)) for _ in range(randint(6, 12))])
         driver.implicitly_wait(20)
         driver.get(inputan.baseUrl)
         baselogin.test_login(driver)
@@ -51,6 +52,19 @@ class TestEditUser(unittest.TestCase):
         driver.find_element(By.XPATH,elem.edit).click() 
         driver.find_element(By.XPATH,elem.dropdown).click()
         driver.find_element(By.XPATH,elem.select).click()
+        driver.find_element(By.XPATH, elem.statusAddUserLoc).click()
+        driver.find_element(By.XPATH, elem.statusEnabledAddUserLoc).click()
+        driver.find_element(By.XPATH, elem.employeeNameAddUserLoc).send_keys(Keys.CONTROL,"a")
+        driver.find_element(By.XPATH, elem.employeeNameAddUserLoc).send_keys(Keys.DELETE)
+        driver.find_element(By.XPATH, elem.employeeNameAddUserLoc).send_keys("a")
+        driver.find_element(By.XPATH, elem.e_name).click() 
+        driver.find_element(By.XPATH,elem.u_name).send_keys(Keys.CONTROL,"a")
+        driver.find_element(By.XPATH,elem.u_name).send_keys(Keys.DELETE)
+        driver.find_element(By.XPATH,elem.u_name).send_keys(username) 
+        driver.find_element(By.XPATH,elem.check_pass).click()
+        driver.find_element(By.XPATH,elem.passwrd).send_keys("123456789a") 
+        driver.find_element(By.XPATH,elem.cfrm_passwrd).send_keys("123456789a") 
+        driver.find_element(By.XPATH,elem.save_but).click()
         
 
         validation = driver.find_element(By.XPATH, elem.textRequiredUserRoleAddUserLoc).text
@@ -84,18 +98,20 @@ class TestEditUser(unittest.TestCase):
         baselogin.test_login(driver)
         driver.find_element(By.XPATH,elem.admin).click() 
         driver.find_element(By.XPATH,elem.edit).click() 
+        driver.find_element(By.XPATH,elem.dropdown).click()
+        driver.find_element(By.XPATH,elem.admin_user).click()
         driver.find_element(By.XPATH, elem.employeeNameAddUserLoc).send_keys(Keys.CONTROL,"a")
         driver.find_element(By.XPATH, elem.employeeNameAddUserLoc).send_keys(Keys.DELETE)
+        driver.find_element(By.XPATH, elem.statusAddUserLoc).click()
+        driver.find_element(By.XPATH, elem.statusEnabledAddUserLoc).click()
+
+  
         time.sleep(2)
-        driver.find_element(By.XPATH,elem.save_but).click()
-        time.sleep(10)
-        
 
-
-        validation = driver.find_element(By.XPATH, elem.textRequiredEmployeeNameAddUserLoc).text
+        validation = driver.find_element(By.XPATH, elem.err_name).text
         self.assertEqual(validation, "Required")
         
-        time.sleep(5)
+        
 
     def test_failed_edit_user_username(self): #test success edit users at admin
         
@@ -105,12 +121,18 @@ class TestEditUser(unittest.TestCase):
         baselogin.test_login(driver)
         driver.find_element(By.XPATH,elem.admin).click() 
         driver.find_element(By.XPATH,elem.edit).click() 
+        driver.find_element(By.XPATH,elem.dropdown).click()
+        driver.find_element(By.XPATH,elem.admin_user).click()
+        driver.find_element(By.XPATH, elem.statusAddUserLoc).click()
+        driver.find_element(By.XPATH, elem.statusEnabledAddUserLoc).click()
         driver.find_element(By.XPATH, elem.u_name).send_keys(Keys.CONTROL,"a")
         driver.find_element(By.XPATH, elem.u_name).send_keys(Keys.DELETE)
+        driver.find_element(By.XPATH,elem.check_pass).click()
+        driver.find_element(By.XPATH,elem.passwrd).send_keys("123456789a") 
+        driver.find_element(By.XPATH,elem.cfrm_passwrd).send_keys("123456789a") 
         time.sleep(2)
         driver.find_element(By.XPATH,elem.save_but).click()
         time.sleep(10)
-        
 
 
         validation = driver.find_element(By.XPATH, elem.textRequiredUsernameAddUserLoc).text

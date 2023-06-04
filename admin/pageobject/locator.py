@@ -72,4 +72,7 @@ class elem():
     deleted = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[2]/div/div[6]/div/button[1]"
     cfrm_deleted ="/html/body/div/div[3]/div/div/div/div[3]/button[2]"
 
+    #error
+    err_name="/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/span"
+
     
