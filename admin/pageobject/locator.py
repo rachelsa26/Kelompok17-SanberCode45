@@ -68,5 +68,8 @@ class elem():
     cfrm_passwrd ="/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input"
     #save 
     save_but = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[3]/button[2]"
+    #delete
+    deleted = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[2]/div/div[6]/div/button[1]"
+    cfrm_deleted ="/html/body/div/div[3]/div/div/div/div[3]/button[2]"
 
     
