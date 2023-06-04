@@ -3,6 +3,8 @@ Final Project Bootcamp Software Quality Assurance SanberCode Kelompok 17
 
 Test Case & Test Scenarion Document:https://tinyurl.com/testcasedocumentgroup17
 
+Test Plan Document:https://tinyurl.com/testplandocumentgroup17
+
 The website link used for automation testing : https://opensource-demo.orangehrmlive.com/
 
 Team Members:
