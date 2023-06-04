@@ -43,21 +43,46 @@ class TestEditUser(unittest.TestCase):
     #     baselogin.test_login(driver)
     #     driver.find_element(By.XPATH,elemen.admin).click() 
     #     driver.find_element(By.XPATH,elemen.organization).click() 
-    #     driver.find_element(By.XPATH,elemen.structure).click() 
+    #     driver.find_element(By.XPATH,elemen.structure).click()
+    #     time.sleep(5)
+
+    # def test_search_loc_by_name(self): #test success edit users at admin
+    #     driver = self.browser
+    #     driver.implicitly_wait(20)
+    #     driver.get(inputan.baseUrl)
+    #     baselogin.test_login(driver)
+    #     driver.find_element(By.XPATH,elemen.admin).click() 
+    #     driver.find_element(By.XPATH,elemen.organization).click() 
+    #     driver.find_element(By.XPATH,elemen.location).click() 
+    #     driver.find_element(By.XPATH,elemen.name).send_keys("KRQNOIOMD") 
+    #     driver.find_element(By.XPATH,elemen.search_but).click()
         
     #     time.sleep(5)
 
-    def test_search_loc_by_name(self): #test success edit users at admin
-        driver = self.browser
-        driver.implicitly_wait(20)
-        driver.get(inputan.baseUrl)
-        baselogin.test_login(driver)
-        driver.find_element(By.XPATH,elemen.admin).click() 
-        driver.find_element(By.XPATH,elemen.organization).click() 
-        driver.find_element(By.XPATH,elemen.location).click() 
-        driver.find_element(By.XPATH,elemen.name).send_keys("Indonesia") 
+    # def test_search_loc_by_name_empty(self): #test success edit users at admin
+    #     driver = self.browser
+    #     driver.implicitly_wait(20)
+    #     driver.get(inputan.baseUrl)
+    #     baselogin.test_login(driver)
+    #     driver.find_element(By.XPATH,elemen.admin).click() 
+    #     driver.find_element(By.XPATH,elemen.organization).click() 
+    #     driver.find_element(By.XPATH,elemen.location).click() 
+    #     driver.find_element(By.XPATH,elemen.search_but).click()
         
-        time.sleep(5)
+    #     time.sleep(5)
+
+    # def test_search_loc_by_name_wrong(self): #test success edit users at admin
+    #     driver = self.browser
+    #     driver.implicitly_wait(20)
+    #     driver.get(inputan.baseUrl)
+    #     baselogin.test_login(driver)
+    #     driver.find_element(By.XPATH,elemen.admin).click() 
+    #     driver.find_element(By.XPATH,elemen.organization).click() 
+    #     driver.find_element(By.XPATH,elemen.location).click() 
+    #     driver.find_element(By.XPATH,elemen.name).send_keys("zzzz")
+    #     driver.find_element(By.XPATH,elemen.search_but).click()
+        
+    #     time.sleep(5)
 
     def tearDown(self):
         self.browser.close()
