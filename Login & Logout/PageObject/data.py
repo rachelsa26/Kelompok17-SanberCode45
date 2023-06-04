@@ -1,0 +1,11 @@
+class inputan():
+    baseUrl = "https://opensource-demo.orangehrmlive.com"
+    usernameAdmin = "Admin"
+    passwordLogin = "admin123"
+    usernameLoginFailed = "Wrong Username"
+    passwordLoginFailed = "Wrong Password"
+    textAdminValidation = "Admin"
+    textESSValidation = "ESS"
+    textEnabledValidation = "Enabled"
+    textDisabledValidation = "Disabled"
+    usernameAdminUser = "Admin.User"
